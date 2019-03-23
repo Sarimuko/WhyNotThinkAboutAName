@@ -4,9 +4,13 @@ from Defs import moves, colors
 class Move:
     def __init__(self):
         self.moves = [self.get_diffrent_gems, self.get_two_gems, self.reserve_card, self.purchase_card, self.purchase_reserved_card]
+        self.validate_methods = [self.valid_different_gems, self.valid_two_gems, self.valid_reserve_card, self.valid_purchase_card, self.valid_purchase_reserved_card]
     
     def set_move(self, index, info):
         self.moves[index](info)
+
+    def validate(self, index, GameState, info):
+        return self.validate_methods[index](GameState, info)
 
     def get_diffrent_gems(self, colors):
         self.move = "get_different_color_gems"
@@ -84,6 +88,6 @@ class Move:
     def get_json(self):
         return json.dumps({self.move: self.info})
 
-move = Move()
-move.set_move(1, "red")
-print(move.get_json())
+# move = Move()
+# move.set_move(1, "red")
+# print(move.get_json())

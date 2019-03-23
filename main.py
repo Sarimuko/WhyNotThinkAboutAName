@@ -1,15 +1,16 @@
-from AIbase import ClassicalAI
+from AIbase import ClassicalAI, RandomAI
 from GameState import GameState
 from Move import Move
+import sys
 
-def main():
-    state = input()
+def main(state):
     gameState = GameState()
     gameState.feed(state)
 
-    ai = ClassicalAI()
-    move = ai.makeMove(GameState)
-    print(move.get_json())
+    ai = RandomAI()
+    move = ai.makeMove(gameState)
+    print(move)
 
 if __name__ == "__main__":
-    main()
+    state = sys.argv[1]
+    main(state)

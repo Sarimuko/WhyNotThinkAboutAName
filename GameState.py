@@ -97,6 +97,7 @@ class GameState:
             index = colors.index(gem["color"])
             self.gems[index] = gem["count"]
 
+        # print(obj["table"])
         cards = obj["table"]["cards"]
         for card in cards:
             self.cards[card["level"] - 1].append(Card().feed_text(json.dumps(card)))
@@ -356,4 +357,4 @@ gameState.feed('''{
   }]
 }''')
 
-gameState.debug_print()
+# gameState.debug_print()
