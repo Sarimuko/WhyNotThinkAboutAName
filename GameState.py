@@ -1,40 +1,65 @@
 import json
 from Defs import colors
+class Nobel:
+  def __init__(self):
+    self.requirements = [0, 0, 0, 0, 0]
+  def feed_text(self, text):
+    obj = json.loads(text)
+    # print(text)
+    self.score = obj["score"]
+    costs = obj["requirements"]
+    for c in costs:
+        self.requirements[colors.index(c["color"])] = c["count"]
+
+    return self
+
+  def set_attr(self, score, white = 0, blue = 0, green = 0, red = 0, black = 0):
+    self.requirements = [white, blue, green, red, black]
+    self.score = score
+    return self
+
+  def __repr__(self):
+        return json.dumps({"score": self.score, "requirements": self.requirements})
 
 class Card:
-    def __init__(self, text, noble = False):
-        self.noble = noble
+    def __init__(self):
+        pass
+
+    def set_attr(self, level, color, score, white = 0, blue = 0, green = 0, red = 0, black = 0):
+        self.level = level
+        self.color = colors.index(color)
+        self.score = score
+        self.costs = [white, blue, green, red, black]
+
+        return self
+
+    def feed_text(self, text):
         self.text = text
         obj = json.loads(text)
         self.costs = [0, 0, 0, 0, 0]
         self.color = -1
         self.level = -1
         
-        if self.noble == False:
-            self.level = obj["level"]
-            if "score" in obj:
-                self.score = obj["score"]
-            else:
-                self.score = 0
-            self.color = obj["color"]
-            self.color_index = colors.index(self.color)
-
-            self.costs = [0, 0, 0, 0, 0]
-            costs = obj["costs"]
-            for c in costs:
-                self.costs[colors.index(c["color"])] = c["count"]
-        else:
-            costs = obj["requirements"]
-            for c in costs:
-                self.costs[colors.index(c["color"])] = c["count"]
+        self.level = obj["level"]
+        if "score" in obj:
             self.score = obj["score"]
-            
+        else:
+            self.score = 0
+        self.color = obj["color"]
+        self.color_index = colors.index(self.color)
+
+        self.costs = [0, 0, 0, 0, 0]
+        costs = obj["costs"]
+        for c in costs:
+            self.costs[colors.index(c["color"])] = c["count"]
+
+        return self
 
     def get_json(self):
         return self.text
 
     def __repr__(self):
-        return json.dumps({"noble": self.noble, "score": self.score, "color":self.color, "costs": self.costs, "level": self.level})
+        return json.dumps({"score": self.score, "color":self.color, "costs": self.costs, "level": self.level})
     
 
 
@@ -62,10 +87,10 @@ class GameState:
                     self.playerGems[i][colors.index(gem["color"])] = gem["count"]
             if "reserved_cards" in p:
                 for card in p["reserved_cards"]:
-                    self.playerReserveCards[i].append(Card(json.dumps(card)))
+                    self.playerReserveCards[i].append(Card().feed_text(json.dumps(card)))
             if "purchased_cards" in p:
                 for card in p["purchased_cards"]:
-                    self.playerCards[i].append(Card(json.dumps(card)))
+                    self.playerCards[i].append(Card().feed_text(json.dumps(card)))
 
         gems = obj["table"]["gems"]
         for gem in gems:
@@ -74,11 +99,11 @@ class GameState:
 
         cards = obj["table"]["cards"]
         for card in cards:
-            self.cards[card["level"] - 1].append(Card(json.dumps(card)))
+            self.cards[card["level"] - 1].append(Card().feed_text(json.dumps(card)))
         
         nobles = obj["table"]["nobles"]
         for noble in nobles:
-            self.nobles.append(Card(json.dumps(noble), True))
+            self.nobles.append(Nobel().feed_text(json.dumps(noble)))
 
         self.curPlayer = self.playerName.index(obj["playerName"])
     
