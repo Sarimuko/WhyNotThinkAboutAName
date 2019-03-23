@@ -1,7 +1,29 @@
 import json
-from Defs import moves
+from Defs import moves, colors
 from Move import Move
-from Defs import colors
+import random
+import sys
+
+triples = [('black', 'blue', 'white'),
+           ('black', 'green', 'blue'),
+           ('black', 'green', 'white'),
+           ('black', 'red', 'blue'),
+           ('black', 'red', 'green'),
+           ('black', 'red', 'white'),
+           ('green', 'blue', 'white'),
+           ('red', 'blue', 'white'),
+           ('red', 'green', 'blue'),
+           ('red', 'green', 'white')]
+pairs = [('black', 'red'),
+         ('black', 'blue'),
+         ('black', 'white'),
+         ('black', 'green'),
+         ('red', 'blue'),
+         ('red', 'white'),
+         ('red', 'green'),
+         ('blue', 'white'),
+         ('blue', 'green'),
+         ('green', 'white')]
 
 class AI:
     def __init__(self):
@@ -13,13 +35,13 @@ class AI:
     def validate(self, move):
         pass
 
-class ClassicalAI:
+class ClassicalAI(AI):
     def __init__(self):
         pass
 
     def makeMove(self, GameState):
         #judge the situation if we could buy card
-        curScores=playerScores[curPlayer]
+        curScores=playerScores[GameState.curPlayer]
         #if(curScores>=15) 
         #target=15-curScores
 
@@ -39,19 +61,20 @@ class ClassicalAI:
         if(np.sum(playerGems[curPlayer])>8):
             markMoves[1]=False
         #
-        i=0
-        for playerReserveCard in playerReserveCards if playerReserveCard:
-            i+=1
+ 
+        i = len(GameState.playerReserveCard[GameState.curPlayer])
+
         if(i==3):
             markMoves[2]=False
         if(i==0):
             markMoves[4]=False
         #
-        if(np.sum(playerGems[curPlayer])==0 and not playerCards):
+        if(np.sum(GameState.playerGems[curPlayer])==0 and len(GameState.playerCards[curPlayer]) == 0):
             markMoves[3]=False
             markMoves[4]=False
         
         #sort the value of the card
+        cards = GameState.cards
         cards.sort(key=card.value)
 
         #calculate the ability of each gems
@@ -67,7 +90,7 @@ class ClassicalAI:
                 aimCard=card
                 break 
         #playerInformation
-        for playerCard in playerCards:
+        for playerCard in GameState.playerCards:
             playerCardNum=[0 for n in range(5)]
             playerCardNum[color]=1
             essentiallyPlayerGems+=playerCardNum
@@ -130,4 +153,36 @@ class ClassicalAI:
         if((moveIndex==0 and np.sum(jems)+3>10) or (moveIndex==1 and gems[resultIndex]<4) or (moveIndex==2 and playerReserveCards=3)) 
 
 
-        return Move()
+        return move.get_json()
+
+class RandomAI(AI):
+    def __init__(self):
+        pass
+
+    def makeMove(self, GameState):
+        move = Move()
+        move.move = moves[1]
+        move.info = "red"
+        cards = GameState.cards
+        for i in (2, 1, 0):
+            level_card = cards[i]
+            for card in level_card:
+                if move.validate(3, GameState, card):
+                    move.set_move(3, card)
+                    return move.get_json()
+        
+        for i in range(12):
+            triple = list(triples[random.randint(0, 5)])
+            if move.valid_different_gems(GameState, triple):
+                sys.stderr.write(str(GameState.gems))
+                sys.stderr.write(str(triple))
+                sys.stderr.write(str(move.valid_different_gems(GameState, triple)))
+                move.set_move(0, triple)
+                return move.get_json()
+        
+        for i in range(5):
+            color = random.randint(0, 4)
+            if move.valid_two_gems(GameState, colors[color]):
+                move.set_move(1, colors[color])
+                return move.get_json()
+        return move.get_json()
