@@ -31,3 +31,7 @@ class Move:
 
     def get_json(self):
         return json.dumps({self.move: self.info})
+
+move = Move()
+move.set_move(1, "red")
+print(move.get_json())
