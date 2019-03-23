@@ -34,7 +34,7 @@ class Card:
         self.color = colors.index(color)
         self.score = score
         self.costs = [white, blue, green, red, black]
-        self.value = np.sum(costs)/scores#
+        self.value = np.sum(self.costs)/self.score##
 
         return self
 

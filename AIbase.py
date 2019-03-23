@@ -83,14 +83,30 @@ class ClassicalAI:
             isItOKtoPurchase=False
         if(isItOKtoPurchase and markMove[3]==True):#reserveCrad not consideration
             move.set_move(3, aimCard)#the return action is in the move function
+            return move#
+        else:
+            if(markMoves[4]!=False):
+                for playerReserveCard in playerReserveCards:
+                    aimReserveColorsNumber=playerReserveCard.costs
+                    aimReserveColorsNumber=essentiallyPlayerGems-aimReserveColorsNumber
+                    isItOKPurchaseReverseCard = True
+                    for n in aimReserveColorsNumber if n<0:
+                        isItOKPurchaseReverseCard = False
+                        break
+                    if isItOKPurchaseReverseCard=True:
+                        move.set_move(4, playerReserveCard)
+                        return move
+
         
         #if above can't act, buy same two gems > 
+
         i=0
         for curGems in gems if curGems > 0:
             i += 1
             selectIndex = gems.index(curGems)
         if((i == 1) and (gems[selectIndex] >= 4)):
             move.set_move(1,aimColors) #move to situation2: take two same gems
+            return move#
 
 
         if(not isItOKtoPurchase and markMove[0]==True):#the way to get three gems
@@ -118,16 +134,24 @@ class ClassicalAI:
             cost=tempColors #return present cost list
 
             move.set_move(0, aimColors)#move to situation1: take different gems 1 or 2 or 3
+            return move#
         
-        if()
+        if(markMove[2]==True):
+            move.set_move(2, aimCard)
+            return move
+
+        
         
 
-        moveIndex
 
         
-        move.set_move(moveIndex,aimColors)
+
+        #moveIndex
+
+        
+        #move.set_move(moveIndex,aimColors)
         #resultIndex=aim color of two same card
-        if((moveIndex==0 and np.sum(jems)+3>10) or (moveIndex==1 and gems[resultIndex]<4) or (moveIndex==2 and playerReserveCards=3)) 
+        #if((moveIndex==0 and np.sum(jems)+3>10) or (moveIndex==1 and gems[resultIndex]<4) or (moveIndex==2 and playerReserveCards=3)) 
 
 
         return Move()
