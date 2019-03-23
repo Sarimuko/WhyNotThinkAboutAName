@@ -73,8 +73,15 @@ class ClassicalAI:
             playerCardNum[color]=1
             essentiallyPlayerGems+=playerCardNum
         
-        essentiallyPlayerGems-noble
-        if(essentiallyPlayerGems )
+        #get noble card(free round)
+        for m in range(len(GameState.noble)): #noble card circling
+            for n in range(5): #five kinds of gems
+                if(essentiallyPlayerGems[n] < GameState.noble[m]): #if one kind of gems is less than the noble card's gems
+                    break;
+            if(n == 5):
+                move.set_move(3,GameState.noble[m]) #as same as purchase a card
+                del GameState.noble #delete one of the noble card
+                break;                
         
         #aimCard
         aimColorsNumber=aimCard.costs
