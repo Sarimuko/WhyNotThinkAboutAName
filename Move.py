@@ -80,7 +80,6 @@ class Move:
         if card_info not in GameState.playerReservedCards[GameState.curPlayer]:
             return False
         return self.valid_purchase_card(GameState, card_info)
-        return True
 
     def get_json(self):
         return json.dumps({self.move: self.info})
