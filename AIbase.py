@@ -119,9 +119,23 @@ class ClassicalAI(AI):
                 break
         if(isItOKtoPurchase and markMove[3]==True):#reserveCrad not consideration
             move.set_move(3, aimCard)#the return action is in the move function
-        
+            return move#
+        else:
+            if(markMoves[4]!=False):
+                for playerReserveCard in playerReserveCards:
+                    aimReserveColorsNumber=playerReserveCard.costs
+                    aimReserveColorsNumber=essentiallyPlayerGems-aimReserveColorsNumber
+                    isItOKPurchaseReverseCard = True
+                    for n in aimReserveColorsNumber if n<0:
+                        isItOKPurchaseReverseCard = False
+                        break
+                    if isItOKPurchaseReverseCard=True:
+                        move.set_move(4, playerReserveCard)
+                        return move
+                      
         gems = GameState.gems
         #if above can't act, buy same two gems > 
+           
         i=0
         for index, curGems in enumerate(gems):
             if curGems > 4:
@@ -129,7 +143,7 @@ class ClassicalAI(AI):
                 selectIndex = index
         if((i == 1) and (gems[selectIndex] >= 4)):
             move.set_move(1,aimColors) #move to situation2: take two same gems
-
+            return move#
 
         if(not isItOKtoPurchase and markMove[0]==True):#the way to get three gems
             for aimColor in aimColors:
@@ -156,7 +170,11 @@ class ClassicalAI(AI):
             cost=tempColors #return present cost list
 
             move.set_move(0, aimColors)#move to situation1: take different gems 1 or 2 or 3
+            return move
         
+        if(markMove[2]==True):
+            move.set_move(2, aimCard)
+            return move
         #if()
         
 
