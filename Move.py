@@ -14,6 +14,7 @@ class Move:
         self.move = "get_two_same_color_gems"
         self.info = color
 
+
     def reserve_card(self, card_info, rand = 0):
         self.move = "reserve_card"
         if rand == 0:
