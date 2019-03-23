@@ -89,29 +89,34 @@ class ClassicalAI(AI):
             if card.costs[aimIndex]!=0:
                 aimCard=card
                 break 
+        
+        # 宝石总数
+        essentiallyPlayerGems = GameState.playerGems[GameState.curPlayer]
         #playerInformation
-        for playerCard in GameState.playerCards:
-            playerCardNum=[0 for n in range(5)]
-            playerCardNum[color]=1
-            essentiallyPlayerGems+=playerCardNum
+        for playerCard in GameState.playerCards[GameState.curPlayer]:
+            essentiallyPlayerGems[playerCard.color]+=1
         
         #aimCard
         aimColorsNumber=aimCard.costs
-        aimColorsNumber=essentiallyPlayerGems-aimColorsNumber
+        aimColorsNumber=[essentiallyPlayerGems[i]-aimColorsNumber[i] for i in range(5)]
         #if aimColorsNumber's each item bigger than 0, it's ok to purchase
         #if not than collect gems
         isItOKtoPurchase = True
-        for n in aimColorNumber if n<0:
-            aimColors=[colors[aimColorNumber.index(n)]]
-            isItOKtoPurchase=False
+        for n in aimColorNumber:
+            if n < 0:
+                aimColors=[colors[aimColorNumber.index(n)]]
+                isItOKtoPurchase=False
+                break
         if(isItOKtoPurchase and markMove[3]==True):#reserveCrad not consideration
             move.set_move(3, aimCard)#the return action is in the move function
         
+        gems = GameState.gems
         #if above can't act, buy same two gems > 
         i=0
-        for curGems in gems if curGems > 0:
-            i += 1
-            selectIndex = gems.index(curGems)
+        for index, curGems in enumerate(gems):
+            if curGems > 4:
+                i += 1
+                selectIndex = index
         if((i == 1) and (gems[selectIndex] >= 4)):
             move.set_move(1,aimColors) #move to situation2: take two same gems
 
@@ -125,7 +130,7 @@ class ClassicalAI(AI):
             while len(aimColors) < 3 or cost[maxIndex] == -1:####
                 maxIndex=cost.index(max(cost))
                 cost[maxIndex] = -1 #define into min
-                if ((colors[maxIndex] not in aimColors) and (GameState.gems[maxIndex] != 0)):
+                if ((colors[maxIndex] not in aimColors) and (not GameState.gems[maxIndex] == 0)):
                     aimColors[len(aimColors)] = colors[maxIndex]
                 maxIndex=cost.index(max(cost))
                     
