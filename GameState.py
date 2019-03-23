@@ -14,7 +14,7 @@ class Card:
         costs = obj["costs"]
         for c in costs:
             self.costs[colors.index(c["color"])] = c["count"]
-            
+
     def get_json(self):
         return self.text
     
@@ -27,6 +27,9 @@ class GameState:
         self.cards = [[], [], []]
         self.curPlayer = -1
         self.playerName = []
+        self.playerGems = [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
+        self.playerReserveCards = [[], [], []]
+        self.playerCards = [[], [], []]
 
     def feed(self, text):
         obj = json.loads(text)
@@ -35,6 +38,15 @@ class GameState:
             self.playerName.append(p["name"])
             if "score" in p:
                 self.players[i] = p["score"]
+            if "gems" in p:
+                for gem in p["gems"]:
+                    self.playerGems[i][colors.index(gem["color"])] = gem["count"]
+            if "reserved_cards" in p:
+                for card in p["reserved_cards"]:
+                    self.playerReserveCards[i].append(Card(json.dumps(card)))
+            if "purchased_cards" in p:
+                for card in p["purchased_cards"]:
+                    self.playerCards[i].append(Card(json.dumps(card)))
 
         gems = obj["table"]["gems"]
         for gem in gems:
