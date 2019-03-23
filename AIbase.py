@@ -16,4 +16,4 @@ class ClassicalAI:
         pass
 
     def makeMove(self, GameState):
-        pass
+        return Move()
