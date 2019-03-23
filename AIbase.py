@@ -126,10 +126,11 @@ class ClassicalAI(AI):
                     aimReserveColorsNumber=playerReserveCard.costs
                     aimReserveColorsNumber=essentiallyPlayerGems-aimReserveColorsNumber
                     isItOKPurchaseReverseCard = True
-                    for n in aimReserveColorsNumber if n<0:
-                        isItOKPurchaseReverseCard = False
-                        break
-                    if isItOKPurchaseReverseCard=True:
+                    for n in aimReserveColorsNumber:
+                        if n<0:
+                            isItOKPurchaseReverseCard = False
+                            break
+                    if isItOKPurchaseReverseCard==True:
                         move.set_move(4, playerReserveCard)
                         return move
                       
@@ -154,7 +155,7 @@ class ClassicalAI(AI):
             while len(aimColors) < 3 or cost[maxIndex] == -1:####
                 maxIndex=cost.index(max(cost))
                 cost[maxIndex] = -1 #define into min
-                if ((colors[maxIndex] not in aimColors) and (not GameState.gems[maxIndex] == 0)):
+                if ((colors[maxIndex] not in aimColors) and (not GameState.gems[maxIndex] == 0)):
                     aimColors[len(aimColors)] = colors[maxIndex]
                 maxIndex=cost.index(max(cost))
                     
