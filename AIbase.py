@@ -1,5 +1,6 @@
 import json
 from Defs import moves
+from Move import Move
 
 class AI:
     def __init__(self):
