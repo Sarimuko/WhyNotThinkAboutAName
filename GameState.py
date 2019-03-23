@@ -1,8 +1,9 @@
+from __future__ import division#
 import json
 from Defs import colors
 
 import numpy as np#
-from __future__ import division#
+
 
 class Nobel:
   def __init__(self):
@@ -35,6 +36,7 @@ class Card:
         self.score = score
         self.costs = [white, blue, green, red, black]
         self.value = np.sum(costs)/scores#
+        #mistake above
 
         return self
 
