@@ -1,10 +1,14 @@
 import json
 from Defs import colors
+
+import numpy as np#
+from __future__ import division#
+
 class Nobel:
   def __init__(self):
     self.requirements = [0, 0, 0, 0, 0]
   def feed_text(self, text):
-    obj = json.loads(text)
+    obj = self.obj = json.loads(text)
     # print(text)
     self.score = obj["score"]
     costs = obj["requirements"]
@@ -25,17 +29,19 @@ class Card:
     def __init__(self):
         pass
 
-    def set_attr(self, level, color, score, white = 0, blue = 0, green = 0, red = 0, black = 0):
+    def set_attr(self, level, color, score, white = 0, blue = 0, green = 0, red = 0, black = 0):#add value for rank
         self.level = level
         self.color = colors.index(color)
         self.score = score
         self.costs = [white, blue, green, red, black]
+        self.value = np.sum(costs)/scores#
 
         return self
 
     def feed_text(self, text):
         self.text = text
-        obj = json.loads(text)
+
+        obj = self.obj = json.loads(text)
         self.costs = [0, 0, 0, 0, 0]
         self.color = -1
         self.level = -1
@@ -95,8 +101,10 @@ class GameState:
         gems = obj["table"]["gems"]
         for gem in gems:
             index = colors.index(gem["color"])
-            self.gems[index] = gem["count"]
+            if "count" in gem:
+              self.gems[index] = gem["count"]
 
+        # print(obj["table"])
         cards = obj["table"]["cards"]
         for card in cards:
             self.cards[card["level"] - 1].append(Card().feed_text(json.dumps(card)))
@@ -356,4 +364,4 @@ gameState.feed('''{
   }]
 }''')
 
-gameState.debug_print()
+# gameState.debug_print()
