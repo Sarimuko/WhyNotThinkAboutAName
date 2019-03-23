@@ -157,15 +157,15 @@ class ClassicalAI(AI):
 
             move.set_move(0, aimColors)#move to situation1: take different gems 1 or 2 or 3
         
-        if()
+        #if()
         
 
-        moveIndex
+        #moveIndex
 
         
-        move.set_move(moveIndex,aimColors)
+        #move.set_move(moveIndex,aimColors)
         #resultIndex=aim color of two same card
-        if((moveIndex==0 and np.sum(jems)+3>10) or (moveIndex==1 and gems[resultIndex]<4) or (moveIndex==2 and playerReserveCards=3)) 
+        #if((moveIndex==0 and np.sum(jems)+3>10) or (moveIndex==1 and gems[resultIndex]<4) or (moveIndex==2 and playerReserveCards=3)) 
 
 
         return move.get_json()
