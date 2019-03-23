@@ -26,6 +26,7 @@ class ClassicalAI:
         #moves = ["get_different_color_gems", "get_two_same_color_gems", "reserve_card", "purchase_card", "purchase_reserved_card"]
         #colors = ["white", "blue", "green", "red", "black", "gold"]
         move=Move()
+       
         
         markMoves=[True for n in range(5)]
         #
@@ -71,6 +72,9 @@ class ClassicalAI:
             playerCardNum=[0 for n in range(5)]
             playerCardNum[color]=1
             essentiallyPlayerGems+=playerCardNum
+        
+        essentiallyPlayerGems-noble
+        if(essentiallyPlayerGems )
         
         #aimCard
         aimColorsNumber=aimCard.costs
