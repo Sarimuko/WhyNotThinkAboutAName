@@ -146,7 +146,7 @@ class ClassicalAI(AI):
                         return move.get_json()
 
         isItOKtoPurchaseEachCard=True
-        if(not isItOKtoPurchase):
+        if(not isItOKtoPurchase and markMoves[3]==True):
             for card in gameState.cards:
                 cardNumber=card.costs
                 cardNumber=[essentiallyPlayerGems[i]-cardNumber[i] for i in range(5)]
@@ -167,7 +167,7 @@ class ClassicalAI(AI):
             if curGems > 4:
                 i += 1
                 selectIndex = index
-        if((i == 1) and (gems[selectIndex] >= 4)):
+        if((i == 1) and (gems[selectIndex] >= 4)) and markMoves[1]:
             move.set_move(1,aimColors) #move to situation2: take two same gems
             return move.get_json()#
         
