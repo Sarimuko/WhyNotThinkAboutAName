@@ -3,142 +3,30 @@ Traceback (most recent call last):
     main(state)
   File "./main.py", line 13, in main
     move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
+  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 171, in makeMove
+    maxIndex=cost.index(max(cost))
+KeyboardInterrupt
 Traceback (most recent call last):
   File "./main.py", line 20, in <module>
     main(state)
   File "./main.py", line 13, in main
     move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
+  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 167, in makeMove
+    maxIndex=cost.index(max(cost))
+KeyboardInterrupt
 Traceback (most recent call last):
   File "./main.py", line 20, in <module>
     main(state)
   File "./main.py", line 13, in main
     move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
+  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 168, in makeMove
+    cost[maxIndex] = -1 #define into min
+KeyboardInterrupt
 Traceback (most recent call last):
   File "./main.py", line 20, in <module>
     main(state)
   File "./main.py", line 13, in main
     move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
-Traceback (most recent call last):
-  File "./main.py", line 20, in <module>
-    main(state)
-  File "./main.py", line 13, in main
-    move = ai.makeMove(gameState)
-  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 110, in makeMove
-    if(essentiallyPlayerGems[n] < gameState.nobles[m]): #if one kind of gems is less than the noble card's gems
-TypeError: '<' not supported between instances of 'int' and 'Nobel'
+  File "/Users/wangyihan/girl_hackathon/WhyNotThinkAboutAName/AIbase.py", line 168, in makeMove
+    cost[maxIndex] = -1 #define into min
+KeyboardInterrupt

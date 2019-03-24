@@ -107,10 +107,11 @@ class ClassicalAI(AI):
         #get noble card(free round)
         for m in range(len(gameState.nobles)): #noble card circling
             for n in range(5): #five kinds of gems
-                if(essentiallyPlayerGems[n] < gameState.nobles[m][n]): #if one kind of gems is less than the noble card's gems
+                if(essentiallyPlayerGems[n] < gameState.nobles[m].requirements[n]): #if one kind of gems is less than the noble card's gems
                     break
             if(n == 5):
                 move.set_move(3,gameState.nobles[m]) #as same as purchase a card
+                return move.get_json()
                 # del gameState.nobles #delete one of the noble card
                 break; 
         # -----------------------------------------------------------???
@@ -155,7 +156,7 @@ class ClassicalAI(AI):
             move.set_move(1,aimColors) #move to situation2: take two same gems
             return move.get_json()#
 
-        if(not isItOKtoPurchase and markMove[0]==True):#the way to get three gems
+        if(not isItOKtoPurchase and markMoves[0]==True):#the way to get three gems
             for aimColor in aimColors:
                 if gems[colors.index(aimColor)] < 0:
                     del aimColors[aimColors.index(aimColor)]
@@ -166,7 +167,7 @@ class ClassicalAI(AI):
                 maxIndex=cost.index(max(cost))
                 cost[maxIndex] = -1 #define into min
                 if ((colors[maxIndex] not in aimColors) and (not gameState.gems[maxIndex] == 0)):
-                    aimColors[len(aimColors)] = colors[maxIndex]
+                    aimColors[len(aimColors) - 1] = colors[maxIndex]
                 maxIndex=cost.index(max(cost))
                     
 
@@ -185,7 +186,7 @@ class ClassicalAI(AI):
             return move.get_json()
             # return move
         
-        if(markMove[2]==True):
+        if(markMoves[2]==True):
             move.set_move(2, aimCard)
             return move.get_json()
             # return move
