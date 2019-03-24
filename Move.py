@@ -57,7 +57,7 @@ class Move:
 
     def valid_reserve_card(self, GameState, card_info):
         curPlayer = GameState.curPlayer
-        if len(GameState.playerReservedCards[curPlayer]) + 1 > 3:
+        if len(GameState.playerReserveCards[curPlayer]) == 3:
             return False
 
         return True
@@ -82,7 +82,7 @@ class Move:
         self.info = card_info.obj
 
     def valid_purchase_reserved_card(self, GameState, card_info):
-        if card_info not in GameState.playerReservedCards[GameState.curPlayer]:
+        if card_info not in GameState.playerReserveCards[GameState.curPlayer]:
             return False
         return self.valid_purchase_card(GameState, card_info)
 

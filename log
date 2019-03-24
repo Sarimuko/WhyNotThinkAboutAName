@@ -1,5 +1,5 @@
 Game starts!
-Players: main, player2, player3
+Players: main, main2, main3
 Starting table
 {
   "gems": [{
@@ -22,19 +22,30 @@ Starting table
     "count": 5
   }],
   "cards": [{
-    "level": 3,
-    "score": 4,
-    "color": "blue",
-    "costs": [{
-      "color": "white",
-      "count": 7
-    }]
-  }, {
     "level": 1,
     "color": "black",
     "costs": [{
       "color": "green",
-      "count": 3
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
     }]
   }, {
     "level": 3,
@@ -51,162 +62,106 @@ Starting table
       "count": 3
     }]
   }, {
+    "level": 3,
+    "score": 5,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 7
+    }, {
+      "color": "blue",
+      "count": 3
+    }]
+  }, {
     "level": 2,
-    "score": 2,
+    "score": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
     "color": "white",
     "costs": [{
       "color": "red",
-      "count": 5
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 2,
+    "score": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 3
     }]
   }, {
     "level": 1,
     "color": "black",
     "costs": [{
       "color": "white",
-      "count": 1
+      "count": 2
     }, {
       "color": "blue",
       "count": 2
     }, {
-      "color": "green",
-      "count": 1
-    }, {
       "color": "red",
       "count": 1
     }]
   }, {
     "level": 3,
     "score": 4,
-    "color": "black",
+    "color": "red",
     "costs": [{
       "color": "green",
-      "count": 3
-    }, {
-      "color": "red",
-      "count": 6
-    }, {
-      "color": "black",
-      "count": 3
-    }]
-  }, {
-    "level": 2,
-    "score": 1,
-    "color": "black",
-    "costs": [{
-      "color": "white",
-      "count": 3
-    }, {
-      "color": "green",
-      "count": 3
-    }, {
-      "color": "black",
-      "count": 2
-    }]
-  }, {
-    "level": 3,
-    "score": 4,
-    "color": "white",
-    "costs": [{
-      "color": "black",
       "count": 7
     }]
   }, {
     "level": 2,
-    "score": 1,
-    "color": "white",
+    "score": 3,
+    "color": "black",
     "costs": [{
-      "color": "white",
-      "count": 2
-    }, {
-      "color": "blue",
-      "count": 3
-    }, {
-      "color": "red",
-      "count": 3
-    }]
-  }, {
-    "level": 1,
-    "color": "white",
-    "costs": [{
-      "color": "blue",
-      "count": 1
-    }, {
-      "color": "green",
-      "count": 1
-    }, {
-      "color": "red",
-      "count": 1
-    }, {
       "color": "black",
-      "count": 1
-    }]
-  }, {
-    "level": 1,
-    "color": "blue",
-    "costs": [{
-      "color": "white",
-      "count": 1
-    }, {
-      "color": "black",
-      "count": 2
+      "count": 6
     }]
   }, {
     "level": 2,
     "score": 2,
     "color": "blue",
     "costs": [{
-      "color": "white",
-      "count": 2
-    }, {
+      "color": "blue",
+      "count": 5
+    }]
+  }, {
+    "level": 3,
+    "score": 5,
+    "color": "black",
+    "costs": [{
       "color": "red",
-      "count": 1
+      "count": 7
     }, {
       "color": "black",
-      "count": 4
+      "count": 3
     }]
   }],
   "nobles": [{
     "score": 3,
     "requirements": [{
-      "color": "black",
-      "count": 4
-    }, {
-      "color": "white",
-      "count": 4
-    }]
-  }, {
-    "score": 3,
-    "requirements": [{
-      "color": "red",
-      "count": 4
-    }, {
-      "color": "green",
-      "count": 4
-    }]
-  }, {
-    "score": 3,
-    "requirements": [{
-      "color": "black",
-      "count": 4
-    }, {
-      "color": "red",
-      "count": 4
-    }]
-  }, {
-    "score": 3,
-    "requirements": [{
-      "color": "black",
-      "count": 3
-    }, {
-      "color": "red",
-      "count": 3
-    }, {
-      "color": "green",
-      "count": 3
-    }]
-  }, {
-    "score": 3,
-    "requirements": [{
       "color": "blue",
       "count": 4
     }, {
@@ -216,14 +171,11 @@ Starting table
   }, {
     "score": 3,
     "requirements": [{
-      "color": "green",
-      "count": 3
-    }, {
-      "color": "blue",
-      "count": 3
+      "color": "black",
+      "count": 4
     }, {
       "color": "white",
-      "count": 3
+      "count": 4
     }]
   }, {
     "score": 3,
@@ -243,16 +195,16 @@ Starting table
       "color": "black",
       "count": 3
     }, {
-      "color": "blue",
+      "color": "red",
       "count": 3
     }, {
-      "color": "white",
+      "color": "green",
       "count": 3
     }]
   }, {
     "score": 3,
     "requirements": [{
-      "color": "blue",
+      "color": "red",
       "count": 4
     }, {
       "color": "green",
@@ -269,6 +221,48 @@ Starting table
     }, {
       "color": "white",
       "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 4
+    }, {
+      "color": "red",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "blue",
+      "count": 4
+    }, {
+      "color": "green",
+      "count": 4
     }]
   }]
 }
@@ -276,531 +270,2916 @@ Round 1
 Highest score: 0
 Player main's turn
 main is getting different color gems.
-Successfully got blue gems.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Successfully got red, green, white gems.
+Player main2's turn
+main2 is getting different color gems.
+Successfully got red, white, black gems.
+Player main3's turn
+main3 is getting different color gems.
+Successfully got red, green, black gems.
 Round 2
 Highest score: 0
 Player main's turn
 main is getting different color gems.
-Successfully got blue gems.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Successfully got red, green, white gems.
+Player main2's turn
+main2 is getting different color gems.
+Successfully got green, blue, black gems.
+Player main3's turn
+main3 is getting different color gems.
+Successfully got green, blue, black gems.
 Round 3
 Highest score: 0
 Player main's turn
-main is getting different color gems.
-Successfully got blue gems.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+main is purchasing the card from table.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the card.
+Player main2's turn
+main2 is getting different color gems.
+Successfully got red, blue, black gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 4
 Highest score: 0
 Player main's turn
-main is getting different color gems.
-Successfully got blue gems.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+main is reserving the card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 3
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 3
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player main2's turn
+main2 is purchasing the card from table.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the card.
+Player main3's turn
+main3 is getting different color gems.
+Successfully got green, blue, black gems.
 Round 5
 Highest score: 0
 Player main's turn
 main is getting different color gems.
-Successfully got blue gems.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Successfully got red, green, white gems.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 6
 Highest score: 0
 Player main's turn
 main is getting different color gems.
-Successfully got white gems.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Successfully got red, green gems.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 7
 Highest score: 0
 Player main's turn
-main is getting different color gems.
-Successfully got white gems.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully purchased the card.
+Player main2's turn
+main2 is getting two same color gems.
+Successfully got two white gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid action. Can't hold more than 10 gems.
 Round 8
-Highest score: 0
+Highest score: 1
+Player main's turn
+main is getting different color gems.
+Successfully got white, blue gems.
+Player main2's turn
+main2 is purchasing the card from table.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }]
+}
+Successfully purchased the card.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid action. Can't hold more than 10 gems.
+Round 9
+Highest score: 1
+Player main's turn
+main is reserving the card.
+{
+  "level": 3,
+  "score": 5,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 7
+  }, {
+    "color": "blue",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 3,
+  "score": 5,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 7
+  }, {
+    "color": "blue",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player main2's turn
+main2 is getting two same color gems.
+Successfully got two white gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid action. Can't hold more than 10 gems.
+Round 10
+Highest score: 1
+Player main's turn
+main is reserving the card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player main2's turn
+main2 is getting two same color gems.
+Successfully got two red gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 11
+Highest score: 1
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player main2's turn
+main2 is purchasing the card from table.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the card.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid action. Can't hold more than 10 gems.
+Round 12
+Highest score: 1
 Player main's turn
 main is getting different color gems.
 Successfully got white gems.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
-Round 9
-Highest score: 0
-Player main's turn
-main is reserving the card.
-{
-  "level": 1,
-  "color": "black",
-  "costs": [{
-    "color": "white",
-    "count": 1
-  }, {
-    "color": "blue",
-    "count": 2
-  }, {
-    "color": "green",
-    "count": 1
-  }, {
-    "color": "red",
-    "count": 1
-  }]
-}
-A new Card on the table.
-{
-  "level": 1,
-  "color": "black",
-  "costs": [{
-    "color": "white",
-    "count": 1
-  }, {
-    "color": "blue",
-    "count": 2
-  }, {
-    "color": "green",
-    "count": 1
-  }, {
-    "color": "red",
-    "count": 1
-  }]
-}
-Successfully reserved the card.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
-Round 10
-Highest score: 0
-Player main's turn
-main is reserving the card.
-{
-  "level": 1,
-  "color": "white",
-  "costs": [{
-    "color": "blue",
-    "count": 1
-  }, {
-    "color": "green",
-    "count": 1
-  }, {
-    "color": "red",
-    "count": 1
-  }, {
-    "color": "black",
-    "count": 1
-  }]
-}
-A new Card on the table.
-{
-  "level": 1,
-  "color": "white",
-  "costs": [{
-    "color": "blue",
-    "count": 1
-  }, {
-    "color": "green",
-    "count": 1
-  }, {
-    "color": "red",
-    "count": 1
-  }, {
-    "color": "black",
-    "count": 1
-  }]
-}
-Successfully reserved the card.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
-Round 11
-Highest score: 0
-Player main's turn
-main is reserving the card.
-{
-  "level": 1,
-  "color": "red",
-  "costs": [{
-    "color": "white",
-    "count": 2
-  }, {
-    "color": "green",
-    "count": 1
-  }, {
-    "color": "black",
-    "count": 2
-  }]
-}
-A new Card on the table.
-{
-  "level": 1,
-  "color": "red",
-  "costs": [{
-    "color": "white",
-    "count": 2
-  }, {
-    "color": "green",
-    "count": 1
-  }, {
-    "color": "black",
-    "count": 2
-  }]
-}
-Successfully reserved the card.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
-Round 12
-Highest score: 0
-Player main's turn
-main is reserving the card.
-Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting different color gems.
+Successfully got red, green, black gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 13
-Highest score: 0
+Highest score: 1
 Player main's turn
-main is reserving the card.
-Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+main is getting different color gems.
+Successfully got white gems.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 14
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 15
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 16
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 17
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 18
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 19
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 20
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 21
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 22
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 23
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 24
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 25
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 26
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 27
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 28
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 29
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 30
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 31
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 32
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 33
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 34
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 35
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 36
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 37
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 38
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 39
-Highest score: 0
+Highest score: 1
 Player main's turn
 main is reserving the card.
 Invalid Action. Can't reserve more than 3 cards.
-Player player2's turn
-Player binary execution error.
-Player missed this turn.
-Player player3's turn
-Player binary execution error.
-Player missed this turn.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
 Round 40
-Highest score: 0
+Highest score: 1
 Player main's turn
-main is reservi
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 41
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 42
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 43
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 44
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 45
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 46
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 47
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 48
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 49
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 50
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 51
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 52
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 53
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 54
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 55
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 56
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 57
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 58
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 59
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 60
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 61
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 62
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 63
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 64
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 65
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 66
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 67
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 68
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 69
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 70
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 71
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 72
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 73
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 74
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 75
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 76
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 77
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 78
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 79
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 80
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 81
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 82
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 83
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 84
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 85
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 86
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 87
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 88
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 89
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 90
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 91
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 92
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 93
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 94
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 95
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 96
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 97
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 98
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 99
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 100
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 101
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 102
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 103
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 104
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 105
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 106
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 107
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 108
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 109
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 110
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 111
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 112
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 113
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 114
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 115
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 116
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 117
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 118
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 119
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 120
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 121
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 122
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 123
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 124
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 125
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 126
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 127
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 128
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 129
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 130
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 131
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 132
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 133
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 134
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 135
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 136
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 137
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 138
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 139
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 140
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 141
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 142
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 143
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 144
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 145
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 146
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 147
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 148
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 149
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 150
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 151
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 152
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 153
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 154
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 155
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 156
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 157
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 158
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 159
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 160
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 161
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 162
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 163
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 164
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 165
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 166
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 167
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 168
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 169
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 170
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 171
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 172
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 173
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 174
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 175
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 176
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 177
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 178
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 179
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 180
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 181
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 182
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 183
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 184
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 185
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 186
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 187
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 188
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 189
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 190
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 191
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 192
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 193
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 194
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 195
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 196
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 197
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 198
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 199
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 200
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 201
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 202
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 203
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 204
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 205
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 206
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 207
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 208
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 209
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 210
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 211
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 212
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 213
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 214
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 215
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 216
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 217
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 218
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 219
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 220
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 221
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 222
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 223
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 224
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 225
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 226
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 227
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 228
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 229
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 230
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 231
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 232
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 233
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 234
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 235
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 236
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 237
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 238
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 239
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 240
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 241
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 242
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 243
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 244
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 245
+Highest score: 1
+Player main's turn
+main is reserving the card.
+Invalid Action. Can't reserve more than 3 cards.
+Player main2's turn
+main2 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Player main3's turn
+main3 is getting two same color gems.
+Invalid Action. Can't get gems from the color has less than 4 gems.
+Round 246
+Highest sco
