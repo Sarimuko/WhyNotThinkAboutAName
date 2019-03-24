@@ -114,7 +114,7 @@ class ClassicalAI(AI):
                 return move.get_json()
                 # del gameState.nobles #delete one of the noble card
                 break; 
-        # -----------------------------------------------------------???
+
 
         #aimCard
         aimColorsNumber=aimCard.costs
@@ -163,11 +163,13 @@ class ClassicalAI(AI):
             
             tempColors=cost
             maxIndex=0
-            while len(aimColors) < 3 or cost[maxIndex] == -1:####
+            # print(cost)
+            while len(aimColors) < 3 and not cost[maxIndex] == -1:####
                 maxIndex=cost.index(max(cost))
                 cost[maxIndex] = -1 #define into min
                 if ((colors[maxIndex] not in aimColors) and (not gameState.gems[maxIndex] == 0)):
                     aimColors[len(aimColors) - 1] = colors[maxIndex]
+                # print(cost)
                 maxIndex=cost.index(max(cost))
                     
 
