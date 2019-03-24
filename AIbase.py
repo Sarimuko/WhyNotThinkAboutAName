@@ -90,7 +90,7 @@ class ClassicalAI(AI):
             for i, c in enumerate(card.costs):
                 cost[i]+=c
         
-        aimIndex=cost.index(max(cost))
+        aimIndex=cost.index(min(cost))
 
         #find aim card
         for card in cards:
@@ -111,9 +111,9 @@ class ClassicalAI(AI):
                     break
             if(n == 5):
                 move.set_move(3,gameState.nobles[m]) #as same as purchase a card
-                return move.get_json()
+                #return move.get_json()
                 # del gameState.nobles #delete one of the noble card
-                break; 
+                break
 
 
         #aimCard
@@ -127,6 +127,7 @@ class ClassicalAI(AI):
                 aimColors=[colors[aimColorsNumber.index(n)]]
                 isItOKtoPurchase=False
                 break
+
         if(isItOKtoPurchase and markMove[3]==True):#reserveCrad not consideration
             move.set_move(3, aimCard)#the return action is in the move function
             return move.get_json()#
@@ -143,7 +144,21 @@ class ClassicalAI(AI):
                     if isItOKPurchaseReverseCard==True:
                         move.set_move(4, playerReserveCards)
                         return move.get_json()
-                      
+
+        isItOKtoPurchaseEachCard=True
+        if(not isItOKtoPurchase):
+            for card in GameState.cards:
+                cardNumber=card.costs
+                cardNumber=[essentiallyPlayer[i]-cardNumber[i] for i in range(5)]
+                for n in cardNumber:
+                    if n<0:
+                        break
+                if n>=0: 
+                    targetCard=card 
+                    move.set_move(3, targetCard)
+                    return move.get_json()
+
+                  
         gems = gameState.gems
         #if above can't act, buy same two gems > 
            
@@ -155,32 +170,35 @@ class ClassicalAI(AI):
         if((i == 1) and (gems[selectIndex] >= 4)):
             move.set_move(1,aimColors) #move to situation2: take two same gems
             return move.get_json()#
-
+        
+        #
         if(not isItOKtoPurchase and markMoves[0]==True):#the way to get three gems
             for aimColor in aimColors:
                 if gems[colors.index(aimColor)] < 0:
                     del aimColors[aimColors.index(aimColor)]
-            
+        
+           
             tempColors=cost
-            maxIndex=0
+            minIndex=0
             # print(cost)
-            while len(aimColors) < 3 and not cost[maxIndex] == -1:####
-                maxIndex=cost.index(max(cost))
-                cost[maxIndex] = -1 #define into min
-                if ((colors[maxIndex] not in aimColors) and (not gameState.gems[maxIndex] == 0)):
-                    aimColors[len(aimColors) - 1] = colors[maxIndex]
+            while len(aimColors) < 3 and not cost[minIndex] == 1000:####
+                minIndex=cost.index(min(cost))
+                cost[minIndex] = 1000 #define into min
+                if ((colors[minIndex] not in aimColors) and (not gameState.gems[minIndex] == 0)):
+                    #aimColors[len(aimColors) - 1] = colors[minIndex]
+                    aimColors.extend(colors[minIndex])
                 # print(cost)
-                maxIndex=cost.index(max(cost))
+                minIndex=cost.index(min(cost))
                     
 
             cost=tempColors
-            minIndex=0
-            while len(aimColors) > 3 or cost[minIndex] == 1000:
-                minIndex=cost.index(min(cost))
-                if ((colors[minIndex] in aimColors) and (gameState.gems[minIndex] != 0)):
-                    del(aimColors[minIndex])
-                cost[minIndex]=1000 #define into max
-                minIndex=cost.index(min(cost))
+            maxIndex=0
+            while len(aimColors) > 3 and not cost[maxIndex] == -1:
+                maxIndex=cost.index(max(cost))
+                if ((colors[maxIndex] in aimColors) and (gameState.gems[maxIndex] != 0)):
+                    del(aimColors[maxIndex])
+                cost[maxIndex]=-1 #define into max
+                maxIndex=cost.index(max(cost))
                         
             cost=tempColors #return present cost list
 
