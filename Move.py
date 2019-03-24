@@ -69,11 +69,18 @@ class Move:
 
     def valid_purchase_card(self, GameState, card_info):
         gems = GameState.playerGems[GameState.curPlayer]
+        cards = GameState.playerCards[GameState.curPlayer]
+        for index, card in enumerate(cards):
+            gems[card.color] += 1
         costs = card_info.costs
+        gold = gems[5]
 
+        need = 0
         for i in range(5):
             if costs[i] > gems[i]:
-                return False
+                need += costs[i] - gems[i]
+        if need > gold:
+            return False
         return True
 
 

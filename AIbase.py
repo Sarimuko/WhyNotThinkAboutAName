@@ -215,7 +215,7 @@ class ClassicalAI(AI):
             # cost=tempColors #return present cost list
 
             while (len(aimColors) > 3):
-                del aimColors[aimColors.index(aimColors.index(min(aimColorsNumber)))]
+                del aimColors[aimColors.index(aimColorsNumber.index(min(aimColorsNumber)))]
             aimColors = [colors[w] for w in aimColors]
             if move.valid_different_gems(gameState, aimColors):
                 move.set_move(0, aimColors)#move to situation1: take different gems 1 or 2 or 3
