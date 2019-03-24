@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 from AIbase import ClassicalAI, RandomAI
 from GameState import GameState
 from Move import Move
@@ -7,7 +9,7 @@ def main(state):
     gameState = GameState()
     gameState.feed(state)
 
-    ai = RandomAI()
+    ai = ClassicalAI()
     move = ai.makeMove(gameState)
     print(move)
 

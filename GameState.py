@@ -28,14 +28,19 @@ class Nobel:
 
 class Card:
     def __init__(self):
-        pass
+        self.level = -1
+        self.color = -1
+        self.score = 0
+        self.costs = [0, 0, 0, 0, 0]
+        self.value = 0
 
     def set_attr(self, level, color, score, white = 0, blue = 0, green = 0, red = 0, black = 0):#add value for rank
         self.level = level
         self.color = colors.index(color)
         self.score = score
         self.costs = [white, blue, green, red, black]
-        self.value = np.sum(costs)/scores#
+        if self.score > 0:
+          self.value = np.sum(self.costs)/(self.score + 1)
         #mistake above
 
         return self
@@ -60,6 +65,9 @@ class Card:
         costs = obj["costs"]
         for c in costs:
             self.costs[colors.index(c["color"])] = c["count"]
+
+        if self.score > 0:
+          self.value = np.sum(self.costs)/(self.score + 1)
 
         return self
 

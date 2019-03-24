@@ -4,7 +4,7 @@ from Move import Move
 import random
 import sys
 import numpy as np
-from GameState import Card
+from GameState import Card, GameState
 
 triples = [('black', 'blue', 'white'),
            ('black', 'green', 'blue'),
@@ -31,7 +31,7 @@ class AI:
     def __init__(self):
         pass
 
-    def makeMove(self, GameState):
+    def makeMove(self, gameState):
         pass
 
     def validate(self, move):
@@ -41,9 +41,9 @@ class ClassicalAI(AI):
     def __init__(self):
         pass
 
-    def makeMove(self, GameState):
+    def makeMove(self, gameState):
         #judge the situation if we could buy card
-        curScores=GameState.playerScores[GameState.curPlayer]
+        curScores=gameState.playerScores[gameState.curPlayer]
         #if(curScores>=15) 
         #target=15-curScores
 
@@ -57,34 +57,38 @@ class ClassicalAI(AI):
             for markMove in markMoves:
                 markMove=False
         #
-        if(np.sum(GameState.playerGems[GameState.curPlayer])>7):
+        if(np.sum(gameState.playerGems[gameState.curPlayer])>7):
             markMoves[0]=False
         #
-        if(np.sum(GameState.playerGems[GameState.curPlayer])>8):
+        if(np.sum(gameState.playerGems[gameState.curPlayer])>8):
             markMoves[1]=False
         #
  
-        i = len(GameState.playerReserveCard[GameState.curPlayer])
+        i = len(gameState.playerReserveCards[gameState.curPlayer])
 
         if(i==3):
             markMoves[2]=False
         if(i==0):
             markMoves[4]=False
         #
-        if(np.sum(GameState.playerGems[GameState.curPlayer])==0 and len(GameState.playerCards[GameState.curPlayer]) == 0):
+        if(np.sum(gameState.playerGems[gameState.curPlayer])==0 and len(gameState.playerCards[gameState.curPlayer]) == 0):
             markMoves[3]=False
             markMoves[4]=False
         
         #sort the value of the card
-        cards = GameState.cards
-        cards.sort(key=Card.value)
+        # cards = gameState.cards
+        cards = []
+        for level in gameState.cards:
+            cards.extend(level)
+        cards.sort(key=lambda x:x.value)
         #mistake above
 
         #calculate the ability of each gems
         #cost is the list of demand gems number
-        cost=[]
+        cost=[0, 0, 0, 0, 0]
         for card in cards:
-            cost+=card.costs
+            for i, c in enumerate(card.costs):
+                cost[i]+=c
         
         aimIndex=cost.index(max(cost))
 
@@ -95,20 +99,21 @@ class ClassicalAI(AI):
                 break 
         
         # 宝石总数
-        essentiallyPlayerGems = GameState.playerGems[GameState.curPlayer]
+        essentiallyPlayerGems = gameState.playerGems[gameState.curPlayer]
         #playerInformation
-        for playerCard in GameState.playerCards[GameState.curPlayer]:
+        for playerCard in gameState.playerCards[gameState.curPlayer]:
             essentiallyPlayerGems[playerCard.color]+=1
         
         #get noble card(free round)
-        for m in range(len(GameState.noble)): #noble card circling
+        for m in range(len(gameState.nobles)): #noble card circling
             for n in range(5): #five kinds of gems
-                if(essentiallyPlayerGems[n] < GameState.noble[m]): #if one kind of gems is less than the noble card's gems
+                if(essentiallyPlayerGems[n] < gameState.nobles[m][n]): #if one kind of gems is less than the noble card's gems
                     break
             if(n == 5):
-                move.set_move(3,GameState.noble[m]) #as same as purchase a card
-                del GameState.noble #delete one of the noble card
+                move.set_move(3,gameState.nobles[m]) #as same as purchase a card
+                # del gameState.nobles #delete one of the noble card
                 break; 
+        # -----------------------------------------------------------???
 
         #aimCard
         aimColorsNumber=aimCard.costs
@@ -123,11 +128,11 @@ class ClassicalAI(AI):
                 break
         if(isItOKtoPurchase and markMove[3]==True):#reserveCrad not consideration
             move.set_move(3, aimCard)#the return action is in the move function
-            return move#
+            return move.get_json()#
         else:
             if(markMoves[4]!=False):
-                for playerReserveCard in GameState.playerReserveCards:
-                    aimReserveColorsNumber=playerReserveCard.costs
+                for playerReserveCards in gameState.playerReserveCards:
+                    aimReserveColorsNumber=playerReserveCards.costs
                     aimReserveColorsNumber=essentiallyPlayerGems-aimReserveColorsNumber
                     isItOKPurchaseReverseCard = True
                     for n in aimReserveColorsNumber:
@@ -135,10 +140,10 @@ class ClassicalAI(AI):
                             isItOKPurchaseReverseCard = False
                             break
                     if isItOKPurchaseReverseCard==True:
-                        move.set_move(4, playerReserveCard)
-                        return move
+                        move.set_move(4, playerReserveCards)
+                        return move.get_json()
                       
-        gems = GameState.gems
+        gems = gameState.gems
         #if above can't act, buy same two gems > 
            
         i=0
@@ -148,7 +153,7 @@ class ClassicalAI(AI):
                 selectIndex = index
         if((i == 1) and (gems[selectIndex] >= 4)):
             move.set_move(1,aimColors) #move to situation2: take two same gems
-            return move#
+            return move.get_json()#
 
         if(not isItOKtoPurchase and markMove[0]==True):#the way to get three gems
             for aimColor in aimColors:
@@ -160,7 +165,7 @@ class ClassicalAI(AI):
             while len(aimColors) < 3 or cost[maxIndex] == -1:####
                 maxIndex=cost.index(max(cost))
                 cost[maxIndex] = -1 #define into min
-                if ((colors[maxIndex] not in aimColors) and (not GameState.gems[maxIndex] == 0)):
+                if ((colors[maxIndex] not in aimColors) and (not gameState.gems[maxIndex] == 0)):
                     aimColors[len(aimColors)] = colors[maxIndex]
                 maxIndex=cost.index(max(cost))
                     
@@ -169,7 +174,7 @@ class ClassicalAI(AI):
             minIndex=0
             while len(aimColors) > 3 or cost[minIndex] == 1000:
                 minIndex=cost.index(min(cost))
-                if ((colors[minIndex] in aimColors) and (GameState.gems[minIndex] != 0)):
+                if ((colors[minIndex] in aimColors) and (gameState.gems[minIndex] != 0)):
                     del(aimColors[minIndex])
                 cost[minIndex]=1000 #define into max
                 minIndex=cost.index(min(cost))
@@ -177,11 +182,13 @@ class ClassicalAI(AI):
             cost=tempColors #return present cost list
 
             move.set_move(0, aimColors)#move to situation1: take different gems 1 or 2 or 3
-            return move
+            return move.get_json()
+            # return move
         
         if(markMove[2]==True):
             move.set_move(2, aimCard)
-            return move
+            return move.get_json()
+            # return move
         #if()
         
 
@@ -190,7 +197,7 @@ class ClassicalAI(AI):
         
         #move.set_move(moveIndex,aimColors)
         #resultIndex=aim color of two same card
-        #if((moveIndex==0 and np.sum(jems)+3>10) or (moveIndex==1 and gems[resultIndex]<4) or (moveIndex==2 and playerReserveCards=3)) 
+        #if((moveIndex==0 and np.sum(jems)+3>10) or (moveIndex==1 and gems[resultIndex]<4) or (moveIndex==2 and playerReserveCard=3)) 
 
 
         return move.get_json()
