@@ -147,9 +147,9 @@ class ClassicalAI(AI):
 
         isItOKtoPurchaseEachCard=True
         if(not isItOKtoPurchase):
-            for card in GameState.cards:
+            for card in gameState.cards:
                 cardNumber=card.costs
-                cardNumber=[essentiallyPlayer[i]-cardNumber[i] for i in range(5)]
+                cardNumber=[essentiallyPlayerGems[i]-cardNumber[i] for i in range(5)]
                 for n in cardNumber:
                     if n<0:
                         break
