@@ -1,2 +1,2 @@
 # WhyNotThinkAboutAName
-An strategy-based AI agent developed on Google Girl Hackathon2019.
+A simple strategy-based AI agent developed on Google Girl Hackathon2019.
